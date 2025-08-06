@@ -9,10 +9,15 @@
                 <div class="text-blue-500 font-bold text-sm" >{{ $job->employer->name}}</div>
 
                 <div>
-                    <strong>{{ $job ['title'] }}:</strong> Pays {{ $job [ 'salary' ]}} per year.   
+                    <strong class="text-laracasts ">{{ $job ['title'] }}:</strong> Pays {{ $job [ 'salary' ]}} per year.   
                 </div>
             </a>     
         @endforeach
+
+    <div>
+        {{ $jobs->links() }}
+    </div>
+
     </div>
 
 
